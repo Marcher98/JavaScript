@@ -26,14 +26,13 @@ function main() {
             sleep(1500);
         }
     }
-    
 }
 
 function sleep(ms) {
     Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
 }
-function attackCorp(corpX, corpY) {
 
+function attackCorp(corpX, corpY) {
     robot.mouseClick(corpX, corpY);
     while (corpIsAlive()) {
         checkHealth();
