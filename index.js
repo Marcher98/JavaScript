@@ -4,8 +4,6 @@
 * for bot to go through a whole corp trip
 */ 
 
-//testing changes
-
 //hp color loc 1431,592
 //1260, 700 is corp coord on my screen
 
@@ -52,11 +50,19 @@ function corpIsAlive() {
 }
 
 function checkHealth() {
-
+    if () { //color at healthx, healthy is health color, return true, otherwise false
+        true;
+    } else {
+        false;
+    }
 }
 
 function checkPrayer() {
-
+    if () { //color at prayerx, prayery is prayer color, return true, otherwise false
+        true;
+    } else {
+        false;
+    }
 }
 
 main();
