@@ -25,6 +25,7 @@ function main() {
         } else {
             sleep(1500);
         }
+        sleep(1500);
     }
 }
 
@@ -54,6 +55,7 @@ function checkHealth() {
     var img = robot.screen.capture(0, 0, 1920, 1080);
     var pixel_color = img.colorAt(healthX, healthY);
     if (pixel_color = healthColor) { //color at healthx, healthy is health color, = health is low
+        console.log("Health is low.")
         true;
     } else {
         false;
@@ -64,6 +66,7 @@ function checkPrayer() {
     var img = robot.screen.capture(0, 0, 1920, 1080);
     var pixel_color = img.colorAt(prayX, prayY);
     if (pixel_color = corpColor) { //color at prayx, prayy is pray color, = prayer is low
+        console.log("Prayer is low");
         true;
     } else {
         false;
