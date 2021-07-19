@@ -42,7 +42,9 @@ function attackCorp(corpX, corpY) {
 }
 
 function corpIsAlive() {
-    if () { //color at corpx, corpy is corp color, = true
+    var img = robot.screen.capture(0, 0, 1920, 1080);
+    var pixel_color = img.colorAt(corpX, corpY);
+    if (pixel_color = corpColor) { //color at corpx, corpy is corp color, = true
         true;
     } else {
         false;
@@ -50,7 +52,9 @@ function corpIsAlive() {
 }
 
 function checkHealth() {
-    if () { //color at healthx, healthy is health color, return true, otherwise false
+    var img = robot.screen.capture(0, 0, 1920, 1080);
+    var pixel_color = img.colorAt(healthX, healthY);
+    if (pixel_color = healthColor) { //color at healthx, healthy is health color, = health is low
         true;
     } else {
         false;
@@ -58,7 +62,9 @@ function checkHealth() {
 }
 
 function checkPrayer() {
-    if () { //color at prayerx, prayery is prayer color, return true, otherwise false
+    var img = robot.screen.capture(0, 0, 1920, 1080);
+    var pixel_color = img.colorAt(prayX, prayY);
+    if (pixel_color = corpColor) { //color at prayx, prayy is pray color, = prayer is low
         true;
     } else {
         false;
