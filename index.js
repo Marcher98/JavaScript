@@ -4,6 +4,8 @@
 * for bot to go through a whole corp trip
 */ 
 
+//testing changes
+
 //hp color loc 1431,592
 //1260, 700 is corp coord on my screen
 
